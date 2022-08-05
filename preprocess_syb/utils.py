@@ -112,7 +112,7 @@ def _get_emails(x):
     counts = len(emails)
     return counts, emails
 
-def _remove_emails(d):
+def _remove_emails(x):
     return re.sub(r'[a-z0-9+._-]+@[a-z0-9+._-]+\.[a-z0-9+_-]+\b',"",x)
 
 def _get_urls(x):
