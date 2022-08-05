@@ -13,7 +13,7 @@ setuptools.setup(
     description = 'This is a pre-processing package',
     long_description=long_description,
     long_description_content_type = 'text/markdown', # its a markdown file
-    package = setuptools.find_packages(), # find the directory of the package autmatically
+    packages = setuptools.find_packages(), # find the directory of the package autmatically
     classifiers = [
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
