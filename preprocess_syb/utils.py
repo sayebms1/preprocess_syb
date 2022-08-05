@@ -10,6 +10,7 @@ from spacy.lang.en.stop_words import STOP_WORDS as stopwords
 from bs4 import BeautifulSoup
 import unicodedata
 from textblob import TextBlob
+import html
 
 nlp = spacy.load('en_core_web_sm')
 
@@ -132,7 +133,7 @@ def _remove_special_chars(x):
     return x
 
 def _remove_html_tags(x):
-    return BeautifulSoup(x, 'lxml').get_text().strip()
+    return BeautifulSoup(x, 'html.parser').get_text().strip()
 
 def _remove_accented_chars(x):
     x = unicodedata.normalize('NFKD', x).encode('ascii', 'ignore').decode('utf-8', 'ingore') # encode it in ascii if there is any error then ignore it
