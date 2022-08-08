@@ -7,7 +7,8 @@ with open('README.md', 'r') as file:
 
 setuptools.setup(
     name = 'preprocess_syb', # this should be unique and its the name of the pytho pakcage
-    version = '0.1.1',
+    include_package_data=True,
+    version = '0.1.11',
     author = 'Mohammad Sayeb',
     author_email = 'sayebms@gmail.com' ,
     description = 'This is a pre-processing package',
