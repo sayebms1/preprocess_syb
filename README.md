@@ -7,6 +7,10 @@ Install
 
 `pip install git+ssh://git@github.com:sayebms1/preprocess_syb.git`
 
+or
+
+`pip install git+https://github.com/sayebms1/preprocess_syb.git`
+
 uninstall
 
 `pip uninstall preprocess_syb`
